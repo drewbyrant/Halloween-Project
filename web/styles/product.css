@@ -1,3 +1,12 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 18, 2015, 12:56:14 PM
+    Author     : drewbryant
+*/
 *{
     font-family: 'Amaranth', sans-serif;
 }
@@ -10,9 +19,6 @@ body{
     box-shadow: 0 1px 10px 5px black;
     margin: auto;
     background-color: white;
-}
-.welcome::first-letter{
-    font-size: 2.1em;
 }
 h1.top{
     font-size: 2.5em; 
@@ -29,36 +35,29 @@ h1{
 h2{
     margin-top: 10px;
 }
-section a{
-    color: orange;
-}
 ul:nth-child(3) li{
     margin-top: 5px;
     background-color: orange;
     border: 1px solid black;
 }
-a{
+#horizontal a, #leftbar a{
     text-decoration: none;
 }
 #horizontal a{
     color: white;
-    display: inline-block;
+    
 }
-#horizontal :first-child :first-child{
-    color: orange;
-}
-#vertical a{
+#leftbar a{
     display: block;
     color: black;
     padding-left: 5px;
 }
-#vertical a:hover{
+#leftbar a:hover{
     color: green;
 }
 #horizontal a:hover{
     background-color: gray;
 }
-
 img.pumpkin{
     float: left;
     margin-bottom: 50px;
@@ -74,7 +73,7 @@ ul{
     display: block;
     list-style-type: none;
 }
-#vertical{
+#leftbar{
     float: left;
     margin-bottom: 500px;
     margin-right: 10px;
@@ -91,4 +90,30 @@ ul{
     /*background: black;*/
     padding-left: 35px;
     padding-right: 35px;
+}
+section img{
+    float:left;
+}
+#rightbar{
+    float: right;
+    width: 160px;
+    background-color: #F5DEB3;
+    height: 325px;
+}
+#rightbar a{
+    color: black
+}
+#rightbar :hover{
+    color: green;
+}
+ul img{
+    width: 35%;
+    height: 35%;
+    margin-right: 80px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+p{
+    margin-bottom: 200px;
+    margin-left: 310px;
 }
