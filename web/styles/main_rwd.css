@@ -1,0 +1,167 @@
+*{
+    font-family: 'Amaranth', sans-serif;
+}
+html{
+    background-image: url("http://localhost:8080/HTMLClassExerciseF15/images/bats.gif");
+}
+body{
+    /*width: 800px;*/
+    border: 5px solid black;
+    box-shadow: 0 1px 10px 5px black;
+    margin: auto;
+    background-color: white;
+    max-width: 960px;
+    width: 95%;
+    font-size: 100%;
+}
+main{
+    padding: 15px 1.5625%;
+    width: 59.375%;
+}
+.welcome::first-letter{
+    font-size: 2.1em;
+}
+header{
+    text-indent: 20px;
+    border-bottom: 2px solid black;
+    padding-top: 5px;
+    background: linear-gradient(45deg, white, orange, black);
+}
+h1{
+    margin-bottom: 15px;
+    font-size: 2.5em;
+}
+h2{
+    margin-top: 10px;
+    font-size: 1.875em;
+}
+section a{
+    color: orange;
+}
+#vertical li{
+    margin-top: 5px;
+    background-color: orange;
+    border: 1px solid black;
+}
+p, a{
+    text-decoration: none;
+    font-size: 0.875em;
+}
+#horizontal a{
+    color: white;
+    display: inline-block;
+}
+#horizontal :first-child :first-child{
+    color: orange;
+}
+#vertical a{
+    display: block;
+    color: black;
+    padding-left: 5px;
+}
+#vertical a:hover{
+    color: green;
+}
+#horizontal a:hover{
+    background-color: gray;
+}
+img{
+    max-width: 154px;
+    max-width: 25%;
+}
+img.pumpkin{
+    float: left;
+    margin-bottom: 50px;
+    min-width: 40px;
+    max-width: 15%;
+}
+footer{
+    text-align: center;
+    font-size: 75%;
+    border-top: 2px solid black;
+    padding: 10px;
+    background: linear-gradient(45deg, black, orange, white);
+}
+ul{
+    display: block;
+    list-style-type: none;
+}
+#vertical{
+    float: left;
+    margin-bottom: 500px;
+    margin-right: 10px;
+    /*display: block;*/
+    width: 110px;
+}
+#horizontal{
+    background: black;
+    margin: 0px;
+    padding-left: 0px;
+}
+#horizontal li{
+    display: inline;
+    /*background: black;*/
+    padding-left: 35px;
+    padding-right: 35px;
+}
+@media only screen and (min-width: 768px) and (max-width: 2000px){
+    #hamburger{
+        visibility: hidden;
+    }
+}
+@media only screen and (max-width: 800px){
+    html {
+        background-image: none;
+    }
+    body{
+        box-shadow: none;
+        font-size: 90%
+    }
+    #horizontal li{
+        padding-left: 0px;
+        /*padding-right: 31px;*/
+    }
+}
+@media only screen and (max-width: 767px){
+    #vertical{
+        transform: translateY(500px);
+        text-align: center;
+        float: none;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    div{
+        transform: translateY(-100px);
+    }
+    section :last-child{
+        margin-bottom: 50px;
+    }
+    #horizontal li{
+        padding: 0px;
+    }
+    #horizontal :first-child{
+        visibility: hidden;
+        font-size: 0%;
+    }
+    #horizontal #hamburger{
+        visibility: visible;
+        text-align: right;
+        font-size: 90%;
+    }
+    #horizontal{
+        text-align: right;
+    }
+    /*div{
+        transform: translateY(150px);
+    }*/
+}
+@media only screen and (max-width: 479px){
+    body{
+        font-size: 75%;
+    }
+    #vertical{
+        transform: translateY(450px);
+    }
+}
